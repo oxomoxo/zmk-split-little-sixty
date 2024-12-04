@@ -18,14 +18,13 @@
 #
 # Local Studio Build
 # west build -d build/cl_studio -b nice_nano_v2 \
-#   -S studio-rpc-usb-uart -- -DSHIELD=split_little_sixty_dongle -DCONFIG_ZMK_STUDIO=y
+#   -S studio-rpc-usb-uart -- -DSHIELD=split_little_60_dongle -DCONFIG_ZMK_STUDIO=y
 ---
 include:
   - board: nice_nano_v2
-    shield: split_little_sixty_left
+    shield: split_little_60_left
   - board: nice_nano_v2
-    shield: split_little_sixty_right
+    shield: split_little_60_right
   - board: nice_nano_v2
-    shield: split_little_sixty_dongle
+    shield: split_little_60_dongle
     snippet: studio-rpc-usb-uart
-
