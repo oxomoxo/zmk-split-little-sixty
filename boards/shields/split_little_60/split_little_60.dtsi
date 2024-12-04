@@ -64,9 +64,8 @@ RC(6,3) RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)      RC(3,6) RC(3,7) RC(
 		keys  //                     w   h    x    y     rot    rx    ry
 	// Row 1
 	// Left
-	// Left
 			= <&key_physical_attrs 100 100    0   50       0     0     0>
-			= <&key_physical_attrs 100 100  100   50       0     0     0>
+			, <&key_physical_attrs 100 100  100   50       0     0     0>
 			, <&key_physical_attrs 100 100  200   50       0     0     0>
 			, <&key_physical_attrs 100 100  300   50       0     0     0>
 			, <&key_physical_attrs 100 100  400   50       0     0     0>
@@ -132,9 +131,11 @@ RC(6,3) RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)      RC(3,6) RC(3,7) RC(
 			, <&key_physical_attrs 100 100 1550  350       0     0     0>
 			, <&key_physical_attrs 100 100 1650  350       0     0     0>
 	// Thumb Row
+	// Left
 			, <&key_physical_attrs 100 100  450  450       0     0     0>
 			, <&key_physical_attrs 100 100  550  450       0     0     0>
 			, <&key_physical_attrs 100 100  650  450       0     0     0>
+	// Right
 			, <&key_physical_attrs 100 100 1100  450       0     0     0>
 			, <&key_physical_attrs 100 100 1200  450       0     0     0>
 			, <&key_physical_attrs 100 100 1300  450       0     0     0>
