@@ -1,0 +1,14 @@
+file_format: "1"
+id: split_little_60
+name: split_little_60
+type: shield
+url: https://github.com/oxomoxo/zmk-split-little-sixty
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - split_little_60_left
+  - split_little_60_right
+  - split_little_60_dongle

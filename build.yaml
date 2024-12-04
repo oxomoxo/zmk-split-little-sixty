@@ -13,9 +13,19 @@
 #     shield: reviung41
 #   - board: nice_nano_v2
 #     shield: corne_left
-#     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+#     cmake-args: -DCONFIG_ZMK_USB_LOGGING=n
 #     artifact-name: corne_left_with_logging
 #
+# Local Studio Build
+# west build -d build/cl_studio -b nice_nano_v2 \
+#   -S studio-rpc-usb-uart -- -DSHIELD=split_little_sixty_dongle -DCONFIG_ZMK_STUDIO=y
 ---
 include:
-  - board: nice60
+  - board: nice_nano_v2
+    shield: split_little_sixty_left
+  - board: nice_nano_v2
+    shield: split_little_sixty_right
+  - board: nice_nano_v2
+    shield: split_little_sixty_dongle
+    snippet: studio-rpc-usb-uart
+
