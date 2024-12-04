@@ -6,13 +6,14 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
+// TOFIX : below zmk,physical-layout
 // #include <layouts/oxomoxo/split_little_60.dtsi>
 
 / {
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &oxomoxo_split_little_60_layout;
+        // zmk,physical-layout = &oxomoxo_split_little_60_layout;
     };
 
     default_transform: keymap_transform_0 {
