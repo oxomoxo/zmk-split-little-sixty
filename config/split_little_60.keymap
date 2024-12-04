@@ -19,7 +19,7 @@
 
 /* System Hibernate */
 #define SYSTEM_HIBERNATE (ZMK_HID_USAGE(HID_USAGE_GD, HID_USAGE_GD_SYSTEM_HIBERNATE))
-#define SYS_PWR (SYSTEM_HIBERNATE)
+#define SYS_HIBR (SYSTEM_HIBERNATE)
 
 /* System Hibernate */
 #define C_ILLUM (ZMK_HID_USAGE(HID_USAGE_CONSUMER, HID_USAGE_CONSUMER_ILLUMINATION))
@@ -69,11 +69,11 @@
 // |      | BT_CLR | BT_NXT | BT_PRV | C_MUTE   | C_ILLUM  |         |     |   @   |   ¨   |   ~   |       |  <   |   >   |       |
 //                                   | C_VOL_DN | C_BRI_DN |         |     |       |       |       |
             bindings = <
-&trans  &kp F1       &kp F2       &kp F3       &kp F4       &kp F5        &kp F6      &kp AMPS   &kp PIPE  &kp EXCL  &kp CARET &kp LPRN  &kp RPRN  &trans
-&trans  &kp F7       &kp F8       &kp F9       &kp F10      &kp F11       &kp F12     &kp DOLLAR &kp PRSC  &kp QMARK &kp HASH  &kp LBKT  &kp RBKT  &trans
-&trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp C_VOL_UP &kp C_BRI_UP  &trans      &KP MINUS  &kp UNDER &kp FSLH  &kp BSLH  &kp LBRC  &kp RBRC  &trans
-&trans  &bt BT_CLR   &bt BT_NXT   &bt BT_PRV   &kp C_MUTE   &kp C_ILLUM   &trans      &kp AT     &kp DIAER &kp TILDE &trans    &kp LT    &kp GT    &trans
-                                               &kp C_VOL_DN &kp C_BRI_DN  &trans      &trans     &trans    &trans
+&trans  &kp F1       &kp F2       &kp F3       &kp F4       &kp F5        &kp F6      &kp AMPS   &kp PIPE  &kp EXCL     &kp CARET &kp LPRN  &kp RPRN  &trans
+&trans  &kp F7       &kp F8       &kp F9       &kp F10      &kp F11       &kp F12     &kp DOLLAR &kp PRSC  &kp QMARK    &kp HASH  &kp LBKT  &kp RBKT  &trans
+&trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp C_VOL_UP &kp C_BRI_UP  &trans      &KP MINUS  &kp UNDER &kp FSLH     &kp BSLH  &kp LBRC  &kp RBRC  &trans
+&trans  &bt BT_CLR   &bt BT_NXT   &bt BT_PRV   &kp C_MUTE   &kp C_ILLUM   &trans      &kp AT     &kp DIAER &kp TILDE    &trans    &kp LT    &kp GT    &trans
+                                               &kp C_VOL_DN &kp C_BRI_DN  &trans      &trans     &trans    &kp SYS_HIBR
             >;
         };
 	};
