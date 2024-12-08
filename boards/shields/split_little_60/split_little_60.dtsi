@@ -140,13 +140,13 @@ RC(6,3) RC(3,5) RC(3,4) RC(3,3) RC(3,2) RC(3,1) RC(3,0)      RC(3,6) RC(3,7) RC(
 			, <&key_physical_attrs 100 100 1650  350       0     0     0>
 	// Thumb Row
 	// Left
-			, <&key_physical_attrs 100 100  450  450       0     0     0>
-			, <&key_physical_attrs 100 100  550  450       0     0     0>
-			, <&key_physical_attrs 100 100  650  450       0     0     0>
+			, <&key_physical_attrs 100 100  500  450       0     0     0>
+			, <&key_physical_attrs 100 100  600  450       0     0     0>
+			, <&key_physical_attrs 100 100  700  450       0     0     0>
 	// Right
+			, <&key_physical_attrs 100 100 900  450       0     0     0>
+			, <&key_physical_attrs 100 100 1000  450       0     0     0>
 			, <&key_physical_attrs 100 100 1100  450       0     0     0>
-			, <&key_physical_attrs 100 100 1200  450       0     0     0>
-			, <&key_physical_attrs 100 100 1300  450       0     0     0>
 			;
 	};
 };
