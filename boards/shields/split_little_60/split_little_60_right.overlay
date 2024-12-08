@@ -7,7 +7,7 @@
 #include "split_little_60.dtsi"
 
 &default_transform {
-    col-offset = <7>;
+    col-offset = <6>;
 };
 
 /*
