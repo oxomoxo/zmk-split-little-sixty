@@ -4,7 +4,7 @@
 if SHIELD_SPLIT_LITTLE_60_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Split Little 60"
+    default " ~< Split Little 60 >~ "
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -17,10 +17,16 @@ endif
 if SHIELD_SPLIT_LITTLE_60_LEFTC
 
 config ZMK_KEYBOARD_NAME
-    default "Split Little 60"
+    default " ~< Split Little 60 >~ "
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default n
 
 endif
 
