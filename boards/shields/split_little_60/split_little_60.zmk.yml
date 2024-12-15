@@ -10,5 +10,6 @@ features:
   - display
 siblings:
   - split_little_60_left
+  - split_little_60_leftc
   - split_little_60_right
   - split_little_60_dongle
