@@ -1,6 +1,9 @@
 # Copyright (c) 2024 Lorenzo Pastrana
 # SPDX-License-Identifier: MIT
 
+SOC_SERIES_NRF52X=y
+SOC_NRF52840_QIAA=y
+
 if SHIELD_SPLIT_LITTLE_60_DONGLE
 
 config ZMK_SPLIT_ROLE_CENTRAL
@@ -47,7 +50,74 @@ config ZMK_BLE
 endif
 
 if SHIELD_SPLIT_LITTLE_60_LEFT || SHIELD_SPLIT_LITTLE_60_LEFTC
- if ZMK_DISPLAY
+
+config ZMK_DISPLAY
+	default y
+
+if ZMK_DISPLAY
+
+config SERIAL
+	default n
+config CONSOLE
+	default n
+config UART_CONSOLE
+	default n
+
+# enable pinctrl
+config PINCTRL
+	default y
+
+# enable GPIO
+config GPIO
+	default y
+
+# Enable I2C
+config I2C
+	default y
+config I2C_NRFX
+	default y
+
+# enable display drivers
+config ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+	default y
+config ZMK_DISPLAY_DEDICATED_THREAD_STACK_SIZE
+	default 4096
+config LV_Z_BITS_PER_PIXEL
+	default 1
+config LV_COLOR_DEPTH_1
+	default y
+config LV_DPI_DEF
+	default 145
+config LV_Z_VDB_SIZE
+	default 100
+config LV_USE_THEME_MONO
+	default y
+config LV_COLOR_CHROMA_KEY_HEX
+	default 0x00FF00
+config ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_16
+	default y
+config LV_FONT_MONTSERRAT_26
+	default y
+config LV_FONT_DEFAULT_MONTSERRAT_26
+	default y
+
+# custom status screens
+config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+	default y
+config ZMK_DISPLAY_STATUS_SCREEN_BUILT_IN
+	default n
+config CUSTOM_WIDGET_BATTERY_STATUS
+	default y
+config ZMK_WIDGET_BATTERY_STATUS
+	default n
+config CUSTOM_WIDGET_OUTPUT_STATUS
+	default y
+config ZMK_WIDGET_OUTPUT_STATUS
+	default n
+config CUSTOM_WIDGET_LAYER_STATUS
+	default y
+config ZMK_WIDGET_LAYER_STATUS
+	default n
 
  config I2C
      default y
