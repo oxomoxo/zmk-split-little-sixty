@@ -36,12 +36,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// ----------------------------------------------------|-     -|-------------------------------------------------------
-// |  ESC   |  1  |  2  |  3   |  4   |  5    |   "("  |       |  ")"  |  6    |  7    |  8    |  9   |   0   | BSPC  |
-// |  TAB   |  Q  |  W  |  E   |  R   |  T    |   "["  |       |  "]"  |  Y    |  U    |  I    |  O   |   P   |   "   |
-// |  SHIFT |  A  |  S  |  D   |  F   |  G    |   "{"  |       |  "}"  |  H    |  J    |  K    |  L   |   /   |   '   |
-// |  CTRL  |  Z  |  X  |  C   |  V   |  B    |   "<"  |       |  ">"  |  N    |  M    |  ,    |  .   |   ;   |   `   |
-//                             | RGUI |  LALT |  SPACE |       | ENTER | RALT  | RAISE |
+// ----------------------------------------------------|-        -|-------------------------------------------------------
+// |  ESC   |  1  |  2  |  3   |  4   |  5    |   "("  |          |  ")"  |  6    |  7    |  8    |  9   |   0   | BSPC  |
+// |  TAB   |  Q  |  W  |  E   |  R   |  T    |   "["  |          |  "]"  |  Y    |  U    |  I    |  O   |   P   |   "   |
+// |  SHIFT |  A  |  S  |  D   |  F   |  G    |   "{"  |          |  "}"  |  H    |  J    |  K    |  L   |   /   |   '   |
+// |  CTRL  |  Z  |  X  |  C   |  V   |  B    |   "<"  |          |  ">"  |  N    |  M    |  ,    |  .   |   ;   |   `   |
+//                             | RGUI |  LALT |  SPACE |          | ENTER | RALT  | RAISE |
             bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4   &kp N5   &kp LPRN          &kp RPRN &kp N6   &kp N7      &kp N8    &kp N9  &kp N0   &kp BSPC
 &kp TAB   &kp Q  &kp W  &kp E  &kp R    &kp T    &kp LBKT          &kp RBKT &kp Y    &kp U       &kp I     &kp O   &kp P    &kp DQT
@@ -57,13 +57,13 @@
 // |      |   $   |   %   |   ?   |   #   |     | RST |        |   4   |   5   |   6   |   *   |  HOM  | K_CMENU |  END  |
 // |      |   -   |   _   |   /   |   \   |     | OUT |        |   1   |   2   |   3   |   +   |   UP  |   ^     |  DN   |
 // |      |   @   |   ¨   |   ~   | NUML  |     | STU |        |   0   |   .   |   =   |   -   |   <-  |   v     |  ->   |
-//                                | MEDIASET |  |     |        |       |       |  RGUI |
+//                                | MEDIASET |  |     |        |       |       |       |
             bindings = <
-&trans  &kp AMPS   &kp PIPE  &kp EXCL  &kp CARET    &kp TILDE &kp SYS_HIBR      &kp KP_N7 &kp KP_N8  &kp KP_N9 &kp KDIV &kp INS  &kp PRSC    &kp DEL
-&trans  &kp DOLLAR &kp PRCNT &kp QMARK &kp HASH     &trans    &sys_reset        &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp KMLT &kp HOME &kp K_CMENU &kp END
-&trans  &kp KMIN   &kp UNDER &kp FSLH  &kp BSLH     &trans    &out OUT_TOG      &kp KP_N1 &kp KP_N2  &kp KP_N3 &kp KPLS &kp PGUP &kp UP      &kp PGDN
-&trans  &kp AT     &kp DIAE  &kp TILDE &kp KP_NUM   &trans    &studio_unlock    &kp KP_N0 &kp KP_DOT &kp EQUAL &kp KMIN &kp LEFT &kp DOWN    &kp RIGHT
-                                       &mo MEDIASET &trans    &trans            &trans    &trans     &trans
+&trans  &kp AMPS   &kp PIPE  &kp EXCL  &kp CARET  &kp TILDE &kp SYS_HIBR        &kp KP_N7 &kp KP_N8    &kp KP_N9 &kp KDIV &kp INS  &kp PRSC    &kp DEL
+&trans  &kp DOLLAR &kp PRCNT &kp QMARK &kp HASH   &trans    &sys_reset          &kp KP_N4 &kp KP_N5    &kp KP_N6 &kp KMLT &kp HOME &kp K_CMENU &kp END
+&trans  &kp KMIN   &kp UNDER &kp FSLH  &kp BSLH   &trans    &out OUT_TOG        &kp KP_N1 &kp KP_N2    &kp KP_N3 &kp KPLS &kp PGUP &kp UP      &kp PGDN
+&trans  &kp AT     &kp DIAE  &kp TILDE &kp KP_NUM &trans    &studio_unlock      &kp KP_N0 &kp KP_DOT   &kp EQUAL &kp KMIN &kp LEFT &kp DOWN    &kp RIGHT
+                                       &trans     &trans    &trans              &trans    &mo MEDIASET &trans
             >;
         };
 
@@ -75,11 +75,11 @@
 // |      |   BT1  |   BT2  |   BT3  |  BT_PRV  |  BT_NXT  |  BT_CLR  |     |   @   |   ¨   |   ~   |       |  <   |   >   |       |
 //                                   |          |          |          |     |       |       |       |
             bindings = <
-&trans  &kp F1       &kp F2       &kp F3       &kp F4     &kp C_VOL_UP &kp C_BRI_UP      &kp AMPS   &kp PIPE  &kp EXCL     &kp CARET &kp LPRN  &kp RPRN &trans
-&trans  &kp F5       &kp F6       &kp F7       &kp F8     &kp C_MUTE   &kp C_ILLUM       &kp DOLLAR &kp PRSC  &kp QMARK    &kp HASH  &kp LBKT  &kp RBKT &trans
-&trans  &kp F9       &kp F10      &kp F11      &kp F12    &kp C_VOL_DN &kp C_BRI_DN      &kp MINUS  &kp UNDER &kp FSLH     &kp BSLH  &kp LBRC  &kp RBRC &trans
-&trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_PRV &bt BT_NXT   &bt BT_CLR        &kp AT     &trans    &kp TILDE    &trans    &kp LT    &kp GT   &trans
-                                               &trans     &trans       &trans            &trans     &trans    &kp SYS_HIBR
+&trans  &kp F1       &kp F2       &kp F3       &kp F4     &kp C_VOL_UP &kp C_BRI_UP       &kp AMPS   &kp PIPE  &kp EXCL     &kp CARET &kp LPRN  &kp RPRN &trans
+&trans  &kp F5       &kp F6       &kp F7       &kp F8     &kp C_MUTE   &kp C_ILLUM        &kp DOLLAR &kp PRSC  &kp QMARK    &kp HASH  &kp LBKT  &kp RBKT &trans
+&trans  &kp F9       &kp F10      &kp F11      &kp F12    &kp C_VOL_DN &kp C_BRI_DN       &kp MINUS  &kp UNDER &kp FSLH     &kp BSLH  &kp LBRC  &kp RBRC &trans
+&trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_PRV &bt BT_NXT   &bt BT_CLR         &kp AT     &trans    &kp TILDE    &trans    &kp LT    &kp GT   &trans
+                                               &trans     &trans       &trans             &trans     &trans    &kp SYS_HIBR
 			>;
         };
 
