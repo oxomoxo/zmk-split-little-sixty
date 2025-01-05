@@ -62,7 +62,7 @@
 &trans  &kp AMPS   &kp PIPE  &kp EXCL  &kp CARET    &kp TILDE &kp SYS_HIBR      &kp KP_N7 &kp KP_N8  &kp KP_N9 &kp KDIV &kp INS  &kp PRSC    &kp DEL
 &trans  &kp DOLLAR &kp PRCNT &kp QMARK &kp HASH     &trans    &sys_reset        &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp KMLT &kp HOME &kp K_CMENU &kp END
 &trans  &kp KMIN   &kp UNDER &kp FSLH  &kp BSLH     &trans    &out OUT_TOG      &kp KP_N1 &kp KP_N2  &kp KP_N3 &kp KPLS &kp PGUP &kp UP      &kp PGDN
-&trans  &kp AT     &DIAE     &kp TILDE &KP_NUM      &trans    &studio_unlock    &kp KP_N0 &kp KP_DOT &kp EQUAL &kp KMIN &kp LEFT &kp DOWN    &kp RIGHT
+&trans  &kp AT     &kp DIAE  &kp TILDE &KP_NUM      &trans    &studio_unlock    &kp KP_N0 &kp KP_DOT &kp EQUAL &kp KMIN &kp LEFT &kp DOWN    &kp RIGHT
                                        &mo MEDIASET &trans    &trans            &trans    &trans     &trans
             >;
         };
